@@ -1,31 +1,36 @@
-﻿# 规则之外
+# 规则之外（LAWLESS）
 
-> 状态：Private 开发仓
+> 状态：Private 开发仓库 · 原型阶段
 
-## 当前完成度
+## 当前版本状态
+- V0.8：既有规则与求解逻辑基线。
+- V0.9：前端视觉布局预览，`web/lawless_v09.html`。
+- V1.0：动态法则表现层，`web/lawless_v10.html`。
+- V1.1：空间化 2.5D Canvas 场景，`web/lawless_v11.html`。
+- **V1.1 是空间化视觉表现层，不是真正的 3D 引擎或物理内核升级。**
+- 未经验收的功能不得标记为正式完成。
 
-- 记录进度：待迁入源码 / 版本包后核定
-- **未经验收功能不得标记为已完成。**
+## 运行方式
+使用现代浏览器直接打开目标 HTML 文件。当前为无构建步骤的单文件原型，不依赖外部 CDN；学习记录保存在浏览器本地。
 
-## 目标 / 架构 / 运行方式
+## V1.1 空间化场景
+- 透视斜切棋盘、石材倒角、悬浮石台与边缘阴影。
+- 程序化遗迹、巨型环形建筑、断桥、光束、雾层和环境微粒。
+- 根据关卡法则切换逆重力、相位、熔金回路和静时回廊主题。
+- 相位墙、出口、能量箱和玩家角色增加空间材质与层次。
+- 镜头轻微跟随玩家，重大规则变化触发短时震动。
 
-（待补全。）
+## 验证材料
+- [V0.9 视觉说明](docs/V0.9-visual-preview.md)
+- [V0.9 验证记录](docs/V0.9-validation.md)
+- [V1.0 动态效果说明](docs/V1.0-dynamic-effects.md)
+- [V1.0 验证记录](docs/V1.0-validation.md)
+- [V1.1 空间化视觉说明](docs/V1.1-spatial-world.md)
+- [V1.1 验证记录](docs/V1.1-validation.md)
+- [项目进度总看板](docs/PROJECT_STATUS_DASHBOARD_ZH.md)
 
 ## 工程约定
-
-1. 一项目一仓库 · 开发期 Private
-2. 保留本地 Git 历史与 tags
-3. 版本附测试报告与变更记录（docs/）
-
-## 迁移
-
-若本地已有完整历史：
-
-```bash
-cd <本地目录>
-git remote add origin https://github.com/tortletortle/beyond-rules.git
-git push -u origin --all
-git push origin --tags
-```
-
-不要用骨架 force push 覆盖已有历史。
+1. 一项目一仓库 · 开发期 Private。
+2. 不覆盖未经核对的既有历史。
+3. 每轮版本附测试报告与变更记录。
+4. 区分设计完成、代码实现、自动化验证与真实用户验收。
